@@ -21,6 +21,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    min-height: 650px;
+    min-width: 400px;
 }
 
 section#telefone {
@@ -28,22 +30,28 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 265px;
+    height: 527px;
+
 
     background-image: url(../imagens/frame-iphone.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 265px;
-    height: 527px;
+
 }
 
 section#redes-sociais {
-    position: absolute;
-    right: 50%;
-    transform: translate(+50%);
-    width: auto;
+    position: relative;
+    /* right: 50%;
+    transform: translate(+50%); */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     height: auto;
     padding: 5px;
-    margin-top: 10px;
+}
+section#redes-sociais > a{
+    padding: 5px;
 }
 
 #sombra {
